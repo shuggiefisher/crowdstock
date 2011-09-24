@@ -15,13 +15,14 @@ SECRET_KEY = '=r-$b*8hglm+858&9t043hlm6-&6-3d3vfc4((7yd0dbrakhvi'
 STATIC_URL = '/static/'
 
 INSTALLED_APPS = (
-#    'django.contrib.admin',
+    'django.contrib.admin',
     'django.contrib.contenttypes',
     'django.contrib.auth',
     'django.contrib.sessions',
     'djangotoolbox',
     'autoload',
     'dbindexer',
+    'tweetreader',
 
     # djangoappengine should come last, so it can override a few manage.py commands
     'djangoappengine',
@@ -50,3 +51,6 @@ ADMIN_MEDIA_PREFIX = '/media/admin/'
 TEMPLATE_DIRS = (os.path.join(os.path.dirname(__file__), 'templates'),)
 
 ROOT_URLCONF = 'urls'
+
+TWITTER_USER = "crowdstock"
+TWITTER_PASSWORD = "seedhackers"
